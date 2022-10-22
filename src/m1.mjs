@@ -1,0 +1,12 @@
+const a="s";
+const b="a";
+const c="n";
+const d="j";
+const e="a";
+const f="y";
+export default a;
+export {b};
+export {c};
+export {d};
+export {e};
+export {f};
