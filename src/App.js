@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import About from './Components/About';
+import ExtraFile from './Components/ExtraFile';
 import React, { useState } from 'react';
 import Alert from './Components/Alert';
 import {
@@ -28,7 +29,7 @@ function App() {
   const toggleMode = ()=>{
     if(mode === 'light'){
       setMode('dark');
-      document.body.style.backgroundColor = '#042743';
+      document.body.style.backgroundColor = '#1f272f';
       showAlert("Dark mode has been enabled", "success");
       document.title = 'TextUtils - Dark Mode';
       // setInterval(() => {
@@ -56,7 +57,10 @@ function App() {
     <Switch>
 
           <Route exact path="/about">
-            <About />
+            <About mode={mode} />
+          </Route>
+          <Route exact path="/extrafile">
+            <ExtraFile mode={mode} />
           </Route>
           <Route exact path="/">
             <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>

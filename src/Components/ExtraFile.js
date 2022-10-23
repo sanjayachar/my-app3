@@ -7,7 +7,7 @@ export default function About(props) {
     }
   return (
     <div className='container my-3'>
-    <h1 className='my-3' style={{color:props.mode==='dark'?'white':'black'}}>About us</h1>
+    <h1 className='my-3' style={{color:props.mode==='dark'?'white':'black'}}>Extra File to check my website is deployed into the git hub or not</h1>
 <div className="accordion my-3" id="accordionExample">
 <div className="accordion-item">
 <h2 className="accordion-header" id="headingOne">
